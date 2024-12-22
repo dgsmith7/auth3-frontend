@@ -21,6 +21,7 @@ export const ExternalApiComponent = () => {
     try {
       const token = await getAccessTokenSilently();
       const response = await fetch(`${apiOrigin}/api/external`, {
+        credentials: "include",
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

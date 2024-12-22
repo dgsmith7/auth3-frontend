@@ -5,9 +5,7 @@ import { getConfig } from "../config";
 
 export const ExternalApiComponent = () => {
   const {
-    domain,
-    clientId,
-    apiOrigin = "https://auth3-backend-e28n6.ondigitalocean.app",
+    apiOrigin = "https://auth3-backend-e28n6.ondigitalocean.app:3000",
     audience,
   } = getConfig();
 
@@ -22,9 +20,6 @@ export const ExternalApiComponent = () => {
   const callApi = async () => {
     try {
       const token = await getAccessTokenSilently();
-      console.log("config - ", { domain, clientId, audience });
-      console.log("token - ", token);
-      console.log("origin - ", { apiOrigin });
       const response = await fetch(`${apiOrigin}/api/external`, {
         method: "POST",
         headers: {

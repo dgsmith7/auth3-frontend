@@ -7,7 +7,7 @@ const Logout = () => {
   useEffect(() => {
     logout({
       logoutParams: {
-        returnTo: "https://auth3-frontend-w5jsl.ondigitalocean.app/profile",
+        returnTo: "https://auth3-frontend-w5jsl.ondigitalocean.app/",
       },
     });
   }, []);

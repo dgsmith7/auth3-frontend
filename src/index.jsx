@@ -16,7 +16,7 @@ const providerConfig = {
   clientId: config.clientId,
   //  onRedirectCallback,
   authorizationParams: {
-    redirect_uri: "https://auth3-frontend-w5jsl.ondigitalocean.app/profile",
+    redirect_uri: "https://auth3-frontend-w5jsl.ondigitalocean.app/",
     ...(config.audience ? { audience: config.audience } : null),
   },
 };

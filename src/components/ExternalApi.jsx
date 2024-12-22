@@ -23,7 +23,6 @@ export const ExternalApiComponent = () => {
       const response = await fetch(`${apiOrigin}/api/external`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         },
       });

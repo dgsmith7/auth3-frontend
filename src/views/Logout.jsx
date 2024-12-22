@@ -5,7 +5,11 @@ const Logout = () => {
   const { logout } = useAuth0();
 
   useEffect(() => {
-    logout({ logoutParams: { returnTo: "http://localhost:5173/" } });
+    logout({
+      logoutParams: {
+        returnTo: "https://auth3-frontend-w5jsl.ondigitalocean.app",
+      },
+    });
   }, []);
 
   return <></>;

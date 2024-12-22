@@ -26,7 +26,6 @@ export const ExternalApiComponent = () => {
       console.log("token - ", token);
       console.log("origin - ", { apiOrigin });
       const response = await fetch(`${apiOrigin}/api/external`, {
-        credentials: "include",
         method: "POST",
         headers: {
           "Content-Type": "application/json",

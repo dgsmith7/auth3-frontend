@@ -7,7 +7,7 @@ export const ExternalApiComponent = () => {
   const {
     domain,
     clientId,
-    apiOrigin = "https://auth3-backend-e28n6.ondigitalocean.app/",
+    apiOrigin = "https://auth3-backend-e28n6.ondigitalocean.app",
     audience,
   } = getConfig();
 

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 import { getConfig } from "../config";
 
 export const ExternalApiComponent = () => {
   const {
-    apiOrigin = "https://auth3-backend-e28n6.ondigitalocean.app",
+    apiOrigin = "https://auth3-backend-e28n6.ondigitalocean.app:3000",
     audience,
   } = getConfig();
 
